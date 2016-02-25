@@ -1,3 +1,5 @@
+package round1;
+
 import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.Random;
