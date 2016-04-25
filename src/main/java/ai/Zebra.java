@@ -36,6 +36,16 @@ public class Zebra {
             System.out.println("Found printer: " + sPrinterName);
             DocPrintJob job = psZebra.createPrintJob();
 
+            //ready for test
+            /**
+                ^XA
+                ^FO20,20
+                ^BQ,2,10
+                ^FDQA,0123456789  ABCD 2D code^FS
+                ^XZ
+                现在扫出来的个是是如何使 0123456789  ABCD 2D
+                @URL: http://zhidao.baidu.com/link?url=QETvZodqXszcH28IDKBR-6TCyCAkt9m2gWELceJKQiPZpXhossGUnGabkQC4Fv4DZXNZRPegRIMWzbjUcLItiyqncULutM7o9iPi0J2ja6S
+             */
             //String s = "^XA^FO5,40^BY3^B3,,30^FD123ABC^XZ"; // good
             String s = "^XA\n^FO5,40^BY3^B3,,\n30^FD123ABC\n^XZ"; // '\n' does not hurt
             byte[] by = s.getBytes();
